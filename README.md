@@ -21,6 +21,9 @@ No installation is required! Simply access the game through the Jophicone Game A
 
 ## Contributing
 If you have suggestions for improvements or new features, feel free to fork the repository and submit a pull request. Your contributions are welcome!
+## Screenshots
+
+[![Rock Paper Scissor Game](./deployed.png)](https://jofiel-nguyen.github.io/Rock-Paper-Scissor-Game/)
 
 ## License
 This project is licensed under the [License Name] - see the [LICENSE.md](./LICENSE) file for details.
