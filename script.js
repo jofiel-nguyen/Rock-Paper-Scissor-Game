@@ -4,7 +4,11 @@ function playGame(playerChoice) {
 
     const result = getResult(playerChoice, computerChoice);
 
-    document.getElementById('result').innerHTML = `You chose ${playerChoice}. Computer chose ${computerChoice}. Result: ${result}`;
+    // Use emoji symbols for player and computer choices
+    const playerSymbol = getSymbol(playerChoice);
+    const computerSymbol = getSymbol(computerChoice);
+
+    document.getElementById('result').innerHTML = `You chose ${playerSymbol}. Computer chose ${computerSymbol}. Result: ${result}`;
 }
 
 function getResult(player, computer) {
@@ -18,5 +22,16 @@ function getResult(player, computer) {
         return 'You win!';
     } else {
         return 'Computer wins!';
+    }
+}
+
+function getSymbol(choice) {
+    switch (choice) {
+        case 'rock':
+            return '🪨';
+        case 'paper':
+            return '🧻';
+        case 'scissors':
+            return '✂️';
     }
 }
