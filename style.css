@@ -1,28 +1,32 @@
 body {
     font-family: 'Arial', sans-serif;
     text-align: center;
-    background-color: #f4f4f4;
     margin: 0;
-    padding: 20px; /* Add some padding to the body */
+    padding: 20px;
+}
+
+h1 {
+    color: #333;
+    margin-top: 20px;
 }
 
 #game-container {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 70vh; /* Adjust the height as needed */
+    height: 70vh;
 }
 
 button {
-    font-size: 18px; /* Slightly increase the font size for buttons */
-    padding: 12px 24px; /* Adjust padding for buttons */
-    margin: 0 15px; /* Increase the space between buttons */
+    font-size: 18px;
+    padding: 12px 24px;
+    margin: 0 15px;
     cursor: pointer;
 }
 
 #result {
-    margin-top: 30px; /* Adjust the margin-top value */
-    font-size: 26px; /* Increase the font size for the result */
+    margin-top: 30px;
+    font-size: 26px;
     font-weight: bold;
     color: #333;
 }
@@ -30,7 +34,7 @@ button {
 footer {
     background-color: #333;
     color: #fff;
-    padding: 15px; /* Adjust padding for the footer */
+    padding: 15px;
     position: fixed;
     bottom: 0;
     width: 100%;
@@ -38,5 +42,45 @@ footer {
 }
 
 footer img {
-    margin-right: 15px; /* Adjust margin-right for the logo */
+    margin-right: 15px;
 }
+
+/* Media queries for different screen sizes */
+@media only screen and (max-width: 600px) {
+    /* Styles for phones */
+    body {
+        background-color: #f8f8f8;
+    }
+
+    #game-container {
+        height: 60vh;
+    }
+
+    button {
+        font-size: 16px;
+    }
+
+    #result {
+        font-size: 22px;
+    }
+}
+
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+    /* Styles for tablets */
+    body {
+        background-color: #e6e6e6;
+    }
+
+    #game-container {
+        height: 70vh;
+    }
+
+    button {
+        font-size: 18px;
+    }
+
+    #result {
+        font-size: 24px;
+    }
+}
+
